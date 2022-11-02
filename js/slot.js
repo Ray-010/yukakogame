@@ -95,7 +95,6 @@ function judge_result() {
 }
 
 function change_back(s1, s2, s3) {
-  console.log(s1);
   if(s1!=0){
     let rolled_slot1 = document.getElementById("slot1");
     rolled_slot1.children[0].setAttribute("id", "slot1_ch");
@@ -126,7 +125,6 @@ function change_back(s1, s2, s3) {
     shuffle_available = true;
   }
 }
-
 
 function shuffle_all() {
   if(shuffle_available) {
