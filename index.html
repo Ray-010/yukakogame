@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="slotmachine.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Yukako Game</title>
+</head>
+<body>
+  <h1>ゆかこゲーム</h1>
+  <div class="slot-machine">
+    <button id="shuffle" class="btn shuffle">GO!!</button>
+  
+    <div class="slot-wrapper">
+      <div id="slot1" class="slot"></div>
+      <div class="element-width">　</div>
+      <button id="STOP1" class="btn">STOP</button>
+    </div>
+    
+    <div class="element-width"></div>
+    
+    <div class="slot-wrapper">
+      <div id="slot2" class="slot"></div>
+
+      <div class="element-width">　</div>
+      <button id="STOP2" class="btn">STOP</button>
+    </div>
+    
+    <div class="element-width"></div>
+    
+    <div class="slot-wrapper">
+      <div id="slot3" class="slot"></div>
+
+      <div class="element-width">　</div>
+      <button id="STOP3" class="btn">STOP</button>
+    </div>
+  </div>
+
+  <div class="score-table">
+    <p>ゆかこ: 15</p>
+    <p>,</p>
+    <p>りりか: 5</p>
+    <p>,</p>
+    <p>まゆり: 5</p>
+  </div>
+
+  <div class="have-points">
+    <h4>Points:　</h4>
+    <h3 id="points">30</h3>
+  </div>
+
+  <h2 id="comment"></h2>
+
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="slotmachine.min.js"></script>
+  <script src="slot.js"></script>
+</body>
+</html>
