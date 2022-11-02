@@ -1,0 +1,98 @@
+/* html, body {
+  width: 100%;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Slot Machine -------------------------------------------------------- */
+.slot-btn-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.slot-machine {
+  width: 300px;
+  padding: 20px 50px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  border: 6px double gray;
+}
+
+.element-width {
+  margin: 0 30px;
+  border-left: 2px solid gray;
+}
+
+.slot {
+  height: 200px;
+}
+
+.slot-element {
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 3px 10px;
+}
+
+.btn-wrapper {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  
+  padding: 0 50px;
+  margin: 0 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  border-color: rgb(0, 191, 255);
+  border-radius: 10%;
+  background-color: rgba(0, 191, 255, 0.6);
+}
+.btn-width {
+  margin: 0 15px;
+}
+.shuffle {
+  height: 50px;
+  border-color: red;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.score-table {
+  display: flex;
+}
+.have-points{
+  display: flex;
+}
+
+
+/* Slot Names -------------------------------------------------------- */
+.yukako {
+  color: red;
+}
+.ririka {
+  color: blue;
+}
+.mayuri {
+  color: brown;
+}
+
+.test {
+  background-color: purple;
+}
+
+.selected {
+  background-color: rgba(255, 215, 0, 0.8);
+}
