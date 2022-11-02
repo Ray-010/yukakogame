@@ -28,9 +28,6 @@ const shuffleArray = (array) => {
 }
 
 names = ["ゆかこ", "まゆり", "りりか"]
-slot1_names = ["ゆ,ゆ", "ま,ま", "り,り"];
-slot2_names = ["か,ゆ", "ゆ,ま", "り,り"];
-slot3_names = ["こ,ゆ", "り,ま",  "か,り"];
 slot1_names = shuffleArray(["ゆ,ゆ", "ま,ま", "り,り"]);
 slot2_names = shuffleArray(["か,ゆ", "ゆ,ま", "り,り"]);
 slot3_names = shuffleArray(["こ,ゆ", "り,ま",  "か,り"]);
@@ -54,8 +51,7 @@ class YukakoGameSlot {
       active: 3,
       delay: 150,
       randomize() {
-        // return Math.floor(Math.random()*3);
-
+        return Math.floor(Math.random()*3);
       }
     });
     this.stop_btn.addEventListener("click", ()=>{
