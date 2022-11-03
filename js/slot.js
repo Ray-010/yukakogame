@@ -48,8 +48,9 @@ const slot2 = new YukakoGameSlot("#STOP2", "#slot2");
 const slot3 = new YukakoGameSlot("#STOP3", "#slot3");
 
 function get_result(names){
-  for(let i=0;i<names_have_points.length; i++) {
-    if((names_have_points.includes(names[i][0]))) return [names[i][0], points[names[i][0]], messages[names[i][0]], names[i][1]];
+  for(let i=0;i<names.length; i++) {
+    if(names_have_points.includes(names[i][0])) 
+      return [names[i][0], points[names[i][0]], messages[names[i][0]], names[i][1]];
   }
   return [names[0][0], 0, names[0][0], [-1,-1,-1]];
 }
